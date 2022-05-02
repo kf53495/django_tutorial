@@ -7,8 +7,10 @@
     <p>これまでに{{ num_services|intcomma }}個のサービスを作りました</p>
     <h2>スキル</h2>
     <ul>
-      <li>Python</li>
-      <li>Ruby</li>
-      <li>JavaScript</li>
+      {% for skill in skills %}
+      <li>{{skill}}</li>
+      {% empty %}
+      <li>スキルがありません</li>
+      {% endfor %}
     </ul>
 {% endblock %}

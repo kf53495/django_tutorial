@@ -14,4 +14,9 @@ class About2View(TemplateView):
      def get_context_data(self):
         ctxt = super().get_context_data()
         ctxt["num_services"] = "1523"
+        ctxt["skills"] = [
+          "Python",
+          "Ruby",
+          "JavaScript"
+        ]
         return ctxt
