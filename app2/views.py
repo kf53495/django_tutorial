@@ -1,3 +1,7 @@
-from django.shortcuts import render
+from django.views.generic TemplateView
 
-# Create your views here.
+class Index2View(TemplateView):
+  template_name = 'index2.html'
+
+class About2View(TemplateView):
+  template_name = 'about2.html'
